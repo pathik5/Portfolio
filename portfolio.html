@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="portfolio-container">
+        <div class="portfolio-header">
+            <h1>Portfolio</h1>
+            <p>Projects by [Your Name]</p>
+            <p><a href="index.html">Back to Resume</a></p>
+        </div>
+
+        <div class="filter-menu">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="ai">AI</button>
+            <button class="filter-button" data-filter="python">Python</button>
+            <button class="filter-button" data-filter="web">Web</button>
+        </div>
+
+        <div class="portfolio-section">
+            <h2>Projects</h2>
+            <div class="project" data-category="ai">
+                <h3>AI Project 1</h3>
+                <p>Brief description of the AI project, your role, technologies used, and any notable achievements.</p>
+            </div>
+            <div class="project" data-category="python">
+                <h3>Python Project 1</h3>
+                <p>Brief description of the Python project, your role, technologies used, and any notable achievements.</p>
+            </div>
+            <div class="project" data-category="web">
+                <h3>Web Project 1</h3>
+                <p>Brief description of the Web project, your role, technologies used, and any notable achievements.</p>
+            </div>
+            <div class="project" data-category="ai">
+                <h3>AI Project 2</h3>
+                <p>Brief description of the AI project, your role, technologies used, and any notable achievements.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Contact</h2>
+            <form id="contact-form" action="mailto:[Your Email Address]" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/pathik5"><img src="github-icon.png" alt="GitHub" class="icon"></a>
+                <a href="[LinkedIn Profile]"><img src="linkedin-icon.png" alt="LinkedIn" class="icon"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
