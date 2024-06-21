@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container, .portfolio-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header, .section, .portfolio-header, .portfolio-section, .contact-section {
+    margin-bottom: 20px;
+}
+
+.header h1, .portfolio-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header p, .portfolio-header p {
+    margin: 5px 0;
+}
+
+.section h2, .portfolio-section h2, .contact-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section ul, .portfolio-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li, .portfolio-section ul li, .project {
+    margin-bottom: 10px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e9f7ef;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.project p {
+    color: #34495e;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.filter-menu {
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #2980b9;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-top: 10px;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-section button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
