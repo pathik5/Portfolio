@@ -36,6 +36,14 @@
                 <h3>Web Project 1</h3>
                 <p>Brief description of the Web project, your role, technologies used, and any notable achievements.</p>
             </div>
+            <div class="project" data-category="web">
+                <h3><a href="https://pathik5.github.io/Algorithm/">Shorting-Algorithm-Visualizer</a></h3>
+                <p>A web-based application to visualize different sorting algorithms. My role was to develop and implement the visualization using HTML, CSS, and JavaScript. This project helps users understand how various sorting algorithms work through interactive visualizations.</p>
+            </div>
+            <div class="project" data-category="web">
+                <h3><a href="https://pathik5.github.io/Calculator/">Calculator</a></h3>
+                <p>An online calculator application built with HTML, CSS, and JavaScript. This project showcases my ability to create interactive web applications and handle user inputs effectively.</p>
+            </div>
             <div class="project" data-category="ai">
                 <h3>AI Project 2</h3>
                 <p>Brief description of the AI project, your role, technologies used, and any notable achievements.</p>
@@ -56,12 +64,31 @@
         </div>
 
         <footer>
-            <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+            <p>&copy; 2024 PANKAJ SINGH BORA. All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://github.com/pathik5"><img src="github-icon.png" alt="GitHub" class="icon"></a>
-                <a href="[LinkedIn Profile]"><img src="linkedin-icon.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://www.linkedin.com/in/pankaj-singh-bora/"><img src="linkedin-icon.png" alt="LinkedIn" class="icon"></a>
             </div>
         </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const projects = document.querySelectorAll('.project');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    projects.forEach(project => {
+                        if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
